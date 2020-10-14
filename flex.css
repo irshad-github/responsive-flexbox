@@ -1,0 +1,33 @@
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  flex: 1;
+  min-width: 25%;
+}
+
+/*
+  for laptops,desktop
+  boxes divided by 1/4
+  
+*/
+
+@media (min-width: 650px) and (max-width: 1200px) {
+  .child {
+    min-width: 33%;
+  }
+}
+
+
+/*
+  for mobile devices
+  boxes divided by 1/2 
+*/
+
+@media (max-width: 649px) {
+  .child {
+    min-width: 50%;
+  }
+}
